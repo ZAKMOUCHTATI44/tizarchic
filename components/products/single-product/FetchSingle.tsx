@@ -29,7 +29,7 @@ const FetchSingle = ({ slug }: { slug: string }) => {
       {isLoading && <Loading />}
 
       {data && data.products[0] && (
-        <div className="min-h-screen grid grid-cols-2">
+        <div className="min-h-screen grid grid-cols-1 lg:grid-cols-2">
           <div>
             <ProductImageSlider
               productImages={data.products[0].images?.map((image) => image.url)}

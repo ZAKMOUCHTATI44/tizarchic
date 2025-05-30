@@ -9,40 +9,18 @@ const Footer = async () => {
     { href: "instagram.com", icon: "/social-media/instagram.png" },
     { href: "youtube.com", icon: "/social-media/youtube.png" },
   ];
-
-  const shoesArray = [
-    "Bottines hommes",
-    "Bottines femmes",
-    "Chaussures enfant",
-    "Baskets hommes",
-    "Sandales-nu-pieds femmes",
-    "Mocassins et chaussures bateau",
-    "Ballerines",
-    "Chaussures de ville",
-  ];
-
   const links = [
-    { label: "Accueil", href: "/accueil" },
+    { label: "Accueil", href: "/" },
     {
-      label: "Femme",
-      subLinks: [
-        { label: "Mocassin", href: "/femme/mocassin" },
-        { label: "College", href: "/femme/college" },
-        { label: "Boutin", href: "/femme/boutin" },
-        { label: "Classic", href: "/femme/classic" },
-        { label: "Medical", href: "/femme/medical" },
-      ],
+      label: "Ensembles",
+      href: "/ensembles",
     },
     {
-      label: "Homme",
-      subLinks: [
-        { label: "Sport", href: "/homme/sport" },
-        { label: "Classic", href: "/homme/classic" },
-        { label: "Medical", href: "/homme/medical" },
-      ],
+      label: "Abayas",
+      href: "/abayas",
     },
-    { label: "Sacs a main", href: "/sacs-a-main" },
-    { label: "Sacs de voyage", href: "/sacs-de-voyage" },
+    { label: "Châles", href: "/chales" },
+    { label: "Accessoires", href: "/accessoires" },
   ];
 
   return (
@@ -51,12 +29,7 @@ const Footer = async () => {
         {/* Brand Column */}
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-4">
-            <Image
-              src="/logo.png"
-              alt="Magnus logo"
-              width={80}
-              height={40}
-            />
+            <Image src="/logo.png" alt="Magnus logo" width={80} height={40} />
           </div>
           <p className="text-sm leading-relaxed">
             Magnus est une marque de chaussures et accessoires haut de gamme,
@@ -94,7 +67,7 @@ const Footer = async () => {
               {links.map((link) => (
                 <li key={link.label}>
                   <Link
-                    href={link.href || ''}
+                    href={link.href || ""}
                     className="flex items-center gap-2 hover:text-main transition-colors"
                   >
                     <ChevronRight className="h-4 w-4 text-main" />
@@ -111,7 +84,11 @@ const Footer = async () => {
             <ul className="space-y-4">
               <li className="flex gap-3">
                 <MapPinIcon className="h-5 w-5 text-main mt-1" />
-                <span>2, bis rue Dupont de Eure<br/>75020 Paris</span>
+                <span>
+                  2, bis rue Dupont de Eure
+                  <br />
+                  75020 Paris
+                </span>
               </li>
               <li className="flex gap-3 items-center">
                 <Mail className="h-5 w-5 text-main" />
@@ -129,23 +106,6 @@ const Footer = async () => {
           </div>
 
           {/* Categories */}
-          <div className="space-y-6">
-            <h5 className="font-serif text-lg text-white">Catégories</h5>
-            <ul className="space-y-3">
-              {shoesArray.map((item) => (
-                <li key={item}>
-                  <Link
-                    href="/"
-                    className="flex items-center gap-2 hover:text-main transition-colors"
-                  >
-                    <ChevronRight className="h-4 w-4 text-main" />
-                    {item}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-         
         </div>
       </div>
     </footer>

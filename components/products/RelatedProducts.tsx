@@ -25,7 +25,7 @@ const RelatedProducts = () => {
   if (error) return <ErrorUi />;
 
   return (
-    <div className="flex flex-col gap-5 my-12">
+    <div className="flex flex-col gap-5 my-12 px-5">
       <div className="flex flex-col gap-2 text-center items-center">
         {/* <h2 className="text-5xl font-bold text-main">Produits Similaires</h2> */}
         <p className="text-gray-800 font-semibold text-5xl text-main">
