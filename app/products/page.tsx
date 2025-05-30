@@ -1,0 +1,41 @@
+import React, { Suspense } from "react";
+import BannerProducts from "@/components/products/BannerProducts";
+import ListProducts from "@/components/products/ListProducts";
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Nos Créations – Chaussures et Sacs en Cuir Véritable",
+};
+
+const Page = () => {
+  return (
+    <div>
+      <BannerProducts
+        title="Soyez unique. Soyez Tizar Chic."
+        description={""}
+      />
+      <Suspense>
+        <div className="my-24 mx-auto px-5 flex flex-col gap-5">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-4 gap-5">
+            <div className="col-span-1 px-6 h-[700px] sticky top-0">
+              <FilterProducts />
+            </div>
+            <div className="col-span-3">
+              <div className="pb-5 flex justify-end">
+                <OrderBySelect />
+              </div>
+            </div>
+          </div> */}
+
+          <p className="text-2xl text-gray-600 font-light leading-relaxed text-center"> 
+          Légère, contemporaine et confortable, 
+          la chaussure Magnus est fabriquée à la main en véritable cuir, <br />
+          offrant une élégance raffinée à ceux qui recherchent à la fois style et confort.
+          </p>
+          <ListProducts />
+        </div>
+      </Suspense>
+    </div>
+  );
+};
+
+export default Page;
