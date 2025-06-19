@@ -22,6 +22,7 @@ const Page = () => {
             <div className="col-span-3">
               <div className="pb-5 flex justify-end">
                 <OrderBySelect />
+                <ListProducts />
               </div>
             </div>
           </div> */}

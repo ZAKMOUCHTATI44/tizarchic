@@ -60,7 +60,7 @@ const ListProducts = () => {
       <div className="grid grid-cols-3 gap-5">
         {!data ||
           (data.count === 0 && (
-            <div className="col-span-3 py-12 px-5">
+            <div className="col-span-3 flex justify-center py-12 px-5">
               <Image
                 src={"/empty.svg"}
                 alt="Empty"

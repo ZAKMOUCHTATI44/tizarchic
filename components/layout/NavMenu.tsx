@@ -15,14 +15,17 @@ const links = [
   { label: "Accueil", href: "/" },
   {
     label: "Ensembles",
-    href: "/ensembles",
+    href: "/products?types=ptyp_01JXVDTS2QJSA39N60QYAF6H9D",
   },
   {
     label: "Abayas",
-    href: "/abayas",
+    href: "/products?types=ptyp_01JXVDV4DKYYY8BH7BRJWNE28D",
   },
-  { label: "Châles", href: "/chales" },
-  { label: "Accessoires", href: "/accessoires" },
+  { label: "Châles", href: "/products?types=ptyp_01JXVDVCFAFPS3E43X6GZ5A1TN" },
+  {
+    label: "Accessoires",
+    href: "/products?types=ptyp_01JXXP271B0WMWYTNW73YJH75H",
+  },
 ];
 
 export default function NavMenu() {
