@@ -95,9 +95,7 @@ const Footer = async () => {
               <li className="flex gap-3">
                 <MapPinIcon className="h-5 w-5 text-main mt-1" />
                 <span>
-                  Ain chock
-                  <br />
-                  Casablanca
+                CENTRE COMMERCIAL HABOUS TOUR 20 AVENUE MOHAMED KAMAL N 81-82 ETG 14 , <br /> Casablanca, Maroc
                 </span>
               </li>
               <li className="flex gap-3 items-center">
