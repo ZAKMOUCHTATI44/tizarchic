@@ -89,14 +89,15 @@ const Footer = async () => {
           </div>
 
           {/* Contact Info */}
-          <div className="space-y-6">
+          <div className="space-y-6 col-span-2">
             <h5 className="font-serif text-lg text-white">Nous contacter</h5>
             <ul className="space-y-4">
-              <li className="flex gap-3">
+              <li className="flex gap-3 items-center">
                 <MapPinIcon className="h-5 w-5 text-main mt-1" />
-                <span>
+                <p className="col-span-5">
+
                 CENTRE COMMERCIAL HABOUS TOUR 20 AVENUE MOHAMED KAMAL N 81-82 ETG 14 , <br /> Casablanca, Maroc
-                </span>
+                </p>
               </li>
               <li className="flex gap-3 items-center">
                 <Mail className="h-5 w-5 text-main" />
