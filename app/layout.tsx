@@ -13,7 +13,7 @@ const cinzel = Cinzel({
 export const metadata: Metadata = {
   title: {
     default: "Tizarchic – Berbère Chic",
-    template: "%s | Magnus – Berbère Chic",
+    template: "%s | – Berbère Chic",
   },
   description:
     "🌸 Vêtements femme tendance : ensembles, abayas, châles & accessoires",

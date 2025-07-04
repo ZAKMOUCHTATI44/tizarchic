@@ -6,7 +6,7 @@ import { Metadata } from "next";
 import ShippingOption from "@/components/checkout/ShippingOption";
 
 export const metadata: Metadata = {
-  title: "Finalisez Votre Achat – Magnus",
+  title: "Finalisez Votre Achat – Tizarchic",
 };
 
 const Page = () => {

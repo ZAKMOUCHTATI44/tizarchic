@@ -1,26 +1,35 @@
-import { ChevronRight, Clock, Mail, MapPinIcon, Phone } from "lucide-react";
+import { ChevronRight, Mail, MapPinIcon, Phone } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Footer = async () => {
   const social = [
-    { href: "facebook.com", icon: "/social-media/facebook.png" },
-    { href: "instagram.com", icon: "/social-media/instagram.png" },
-    { href: "youtube.com", icon: "/social-media/youtube.png" },
+    // { href: "facebook.com", icon: "/social-media/facebook.png" },
+    {
+      href: "https://www.instagram.com/tizarchic/",
+      icon: "/social-media/instagram.png",
+    },
+    // { href: "youtube.com", icon: "/social-media/youtube.png" },
   ];
   const links = [
     { label: "Accueil", href: "/" },
     {
       label: "Ensembles",
-      href: "/ensembles",
+      href: "/products?types=ptyp_01JXVDTS2QJSA39N60QYAF6H9D",
     },
     {
       label: "Abayas",
-      href: "/abayas",
+      href: "/products?types=ptyp_01JXVDV4DKYYY8BH7BRJWNE28D",
     },
-    { label: "Châles", href: "/chales" },
-    { label: "Accessoires", href: "/accessoires" },
+    {
+      label: "Châles",
+      href: "/products?types=ptyp_01JXVDVCFAFPS3E43X6GZ5A1TN",
+    },
+    {
+      label: "Accessoires",
+      href: "/products?types=ptyp_01JXXP271B0WMWYTNW73YJH75H",
+    },
   ];
 
   return (
@@ -29,13 +38,13 @@ const Footer = async () => {
         {/* Brand Column */}
         <div className="flex flex-col gap-6">
           <div className="flex items-center gap-4">
-            <Image src="/logo.png" alt="Magnus logo" width={80} height={40} />
+            <Image src="/logo.png" alt="Tizarchic logo" width={80} height={40} />
           </div>
           <p className="text-sm leading-relaxed">
-            Magnus est une marque de chaussures et accessoires haut de gamme,
-            alliant confort, qualité et design moderne. Avec des créations
-            élégantes et durables, Magnus offre des produits stylés pour un
-            confort optimal au quotidien.
+            Élégante, moderne et délicatement conçue, chaque pièce Tizar Chic
+            incarne le raffinement. Nos abayas, châles et accessoires sont
+            soigneusement confectionnés pour offrir une alliance parfaite entre
+            style intemporel et confort au quotidien.
           </p>
           <div className="border-t border-gray-700 w-3/4" />
           <div className="space-y-2">
@@ -44,6 +53,7 @@ const Footer = async () => {
                 <Link
                   key={link.href}
                   href={link.href}
+                  target="_blank"
                   className="p-2 hover:opacity-75 transition-opacity"
                 >
                   <Image
@@ -85,23 +95,23 @@ const Footer = async () => {
               <li className="flex gap-3">
                 <MapPinIcon className="h-5 w-5 text-main mt-1" />
                 <span>
-                  2, bis rue Dupont de Eure
+                  Ain chock
                   <br />
-                  75020 Paris
+                  Casablanca
                 </span>
               </li>
               <li className="flex gap-3 items-center">
                 <Mail className="h-5 w-5 text-main" />
-                contact@magnus.ma
+                tizarchic@outlook.com
               </li>
               <li className="flex gap-3 items-center">
                 <Phone className="h-5 w-5 text-main" />
-                +32 485 21 21 99
+                +212 669 04 60 26
               </li>
-              <li className="flex gap-3 items-center">
+              {/* <li className="flex gap-3 items-center">
                 <Clock className="h-5 w-5 text-main" />
                 Lun-Ven: 08:30 - 12:30
-              </li>
+              </li> */}
             </ul>
           </div>
 

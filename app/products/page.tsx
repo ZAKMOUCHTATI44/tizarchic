@@ -27,10 +27,11 @@ const Page = () => {
             </div>
           </div> */}
 
-          <p className="text-2xl text-gray-600 font-light leading-relaxed text-center"> 
-          Légère, contemporaine et confortable, 
-          la chaussure Magnus est fabriquée à la main en véritable cuir, <br />
-          offrant une élégance raffinée à ceux qui recherchent à la fois style et confort.
+          <p className="text-2xl text-gray-600 font-light leading-relaxed text-center">
+            Élégante, moderne et délicatement conçue, chaque pièce Tizar Chic
+            incarne le raffinement. Nos abayas, châles et accessoires sont
+            soigneusement confectionnés pour offrir une alliance parfaite entre
+            style intemporel et confort au quotidien.
           </p>
           <ListProducts />
         </div>
